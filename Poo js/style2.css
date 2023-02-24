@@ -1,0 +1,135 @@
+body{
+  text-align: center;
+  background-color: aliceblue;
+}
+
+#game{
+
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  text-align: center;
+  background-color: orange;
+  height: auto;
+  width: 35%;
+  margin: 0 auto;
+  border-radius: 5px;
+  margin-top: 5%;
+}
+
+.clock {
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  width: 100%;
+  margin-top: 10vh;
+  align-content: center;
+  font-size: 80px;
+}
+
+.row{
+  width: 50px;
+  height: 50px;
+  border-radius: 2%;
+  background-color: aliceblue;
+  margin: 5px;
+  
+}
+
+@media screen and (max-width: 700px){
+  #game{
+
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    background-color: royalblue;
+    height: auto;
+    width: 100%;
+    border-radius: 5px;
+    margin-top: 5%;
+  }
+
+  .clock {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 10vh;
+    align-content: center;
+    font-size: 30px;
+  }
+
+  .row{
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    background-color: aliceblue;
+    margin: 5px;
+    
+  }
+
+}
+
+
+
+.red{
+  background-color: red;
+}
+
+.yellow{
+  background-color: yellow;
+}
+
+.row.hoverRed{
+
+  background-color: darkred;
+}
+
+.row.hoverYellow{
+
+  background-color: darkgoldenrod;
+}
+
+body {
+
+  background-color: #c0cfd3;
+  font-family: roboto;
+  font-weight: 100;
+}
+
+
+
+.box1, .box2, .box3 {
+  margin: 10px;
+  padding: 10px;
+  background-color: white;
+  border-radius: 20px;
+  box-shadow: 10px 10px 50px 10px rgba(69, 93, 99, .3);
+  display: inline-block;
+}
+
+
+.box3-alt {
+  animation: bounce 1s infinite;
+}
+.bounce {
+    height: 105px;
+    width: 90px;
+
+  display: inline-block;
+    
+    -webkit-animation-name: bounce;
+    -webkit-animation-duration: .2s;
+    animation-name: bounce;
+    animation-duration: .2s ;
+}
+
+@keyframes bounce {
+  0%, 100% {
+    transform: translateY(0px);
+  }
+  50% {
+    transform: translateY(10px);
+  }
+}
+
+  
